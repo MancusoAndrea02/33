@@ -1,0 +1,56 @@
+body.bg-gradient {
+    background: linear-gradient(135deg,#F8FAFC 0%, #EAEFF6 100%);
+    min-height: 100vh;
+}
+h1, h2 {
+    color: #22438c;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-shadow: 0 1px 3px #b6bef8a3;
+}
+h1 { font-size: 2.5rem;}
+h2 { font-size: 2.1rem;}
+.navbar-brand i {
+    margin-right:6px;
+}
+.form-control:focus, .form-select:focus {
+    border-color: #22438c; 
+    box-shadow: 0 0 0 0.13rem #22438c2e;
+}
+.btn-primary,.btn-success,.btn-outline-primary,.btn-outline-success {
+    transition: box-shadow .15s;
+}
+.btn:hover, .btn:focus {
+    box-shadow: 0 6px 18px #22438c2a;
+}
+.card {
+    box-shadow: 0 .4rem 1rem #22438c13;
+    border-radius: 18px;
+}
+.badge {
+    font-size: 1em; 
+    border-radius: 1em;
+}
+.alert {
+    border-radius: 1em;
+}
+.table th {
+    background: #22438c;
+    color: #fff;
+    font-weight:600;
+}
+.table {
+    border-radius:14px;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    background:#F8FAFC;
+}
+.table-bordered>tbody>tr>td, .table-bordered>thead>tr>th {
+    border-color:#b3c1ef;
+}
+@media (max-width: 600px) {
+    h1 { font-size: 1.4rem;}
+    h2 { font-size: 1.1rem;}
+    .table { font-size: 0.96em;}
+    .container { padding: 8px;}
+}

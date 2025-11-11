@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Prenotazione biglietto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar bg-primary navbar-dark shadow-sm mb-4">
+        <div class="container-fluid">
+            <span class="navbar-brand"><i class="bi bi-ticket"></i> Biglietteria Online</span>
+            <a href="../html/spettacoli.html" class="btn btn-outline-light ms-auto"><i class="bi bi-arrow-left"></i> Spettacoli</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-7">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h2 class="card-title mb-3 text-success">Prenota Biglietto</h2>
+                        <div id="replicaInfo"></div>
+                        <form id="prenotaForm" class="mt-3">
+                            <div class="mb-3">
+                                <label for="quantita" class="form-label">Quantità biglietti</label>
+                                <input type="number" min="1" class="form-control" id="quantita" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="tipoPagamento" class="form-label">Tipo di pagamento</label>
+                                <select id="tipoPagamento" class="form-select rounded-pill">
+                                    <option value="Carta">Carta</option>
+                                    <option value="PayPal">PayPal</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100 rounded-pill shadow-sm">Prenota</button>
+                            <div id="prenotaMsg" class="alert mt-3 d-none">Errore</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/prenota.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
